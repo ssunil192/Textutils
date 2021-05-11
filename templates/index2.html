@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Text Utils</title>
+    <body>
+<h1> Welcome to text analyzer. Enter your text below</h1>
+<form action='/analyze' method="get">
+    <textarea name ='text' style='margin: 0px; width: 606px; height: 70px;'>
+    </textarea><br>
+    <input type="checkbox" name="removepunc">Remove Punctuation<br>
+    <input type="checkbox" name="fullcaps">Uppercase<br>
+    <input type="checkbox" name="lineremover">Line Remove<br>
+    <input type="checkbox" name="Charcount">Charctercount<br>
+    <button type = 'submit'> Analyze Text </button>
+</form>
+<!--analyze dtata-->
+<meta charset="UTF-8">
+    <h1> Analaying your text- {{ purpose }}</h1>
+</head>
+<body>
+<p>
+    {{ Analyzed_text }}
+</p>
+
+</body>
+</html>
+</body>
+</head>
+</html>
